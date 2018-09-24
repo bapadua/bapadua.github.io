@@ -2,36 +2,140 @@
 <html lang="en">
 
 <head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-
-  <title>Solução Logica::</title>
+    <title>Solução Logica::</title>
 </head>
+<style>
+    #footer {
+        margin-bottom: 3rem;
+    }
+
+    .jumbotron {
+        background-image: url('./img/bg.jpeg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        padding: 7rem 0;
+    }
+
+    .mastinfo {
+        background-color: rgba(255, 255, 255, 0.5)
+    }
+</style>
 
 <body>
-  <section class="jumbotron">
-    <div class="container">
-        <div class="display-2">Bruno A. de Pádua</div>
-      <div class="display-4">Java Programmer</div>
-      <p>Welcome to my place, to share the important
-        things happening to my new career as a Java developer
-      </p>
-      <div>
-          <a href="https://www.linkedin.com/in/bruno-padua-b268939b/" class="btn btn-primary">Linkedin</a>
-          <a href="#" class="btn btn-secondary">About Me</a>
-      </div>
-    </div>
-  </section>
+    <nav class="navbar navbar-dark bg-dark navbar-expand-sm fixed-bottom">
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#topNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="topNav" class="collapse navbar-collapse">
+            <ul class="navbar-nav">
+                <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="https://www.linkedin.com/in/bruno-padua-b268939b/" class="nav-link">Linkedin</a></li>
+                <li class="nav-item"><a href="http://github.com/solucaologica" class="nav-link">Github</a></li>
+                <li class="nav-item"><a href="http://gitlab.com/solucaologica" class="nav-link">Gitlab</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="jumbotron">
+        <div class="container mastinfo">
+            <div class="display-4 text-light">Bruno A. de Padua</div>
+            <p class="text-dark">Welcome to my github project page!</p>
+            <div>
+                <a href="https://www.linkedin.com/in/bruno-padua-b268939b/" class="btn btn-primary">My Linkedin</a>
+                <a href="http://github.com/solucaologica" class="btn btn-secondary">My Github</a></div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <h1 class="text-primary">A Fullstack Wannabe!</h1>
+                    <p>Here I'll guide you through the path I've been making as a java developer</p>
+                    <p>My mistakes, things that I've should have focused more.</p>
+                    <p>The courses that I made, free stuff, great stuff.</p>
+                    <p>And obviously the applications that I made, and the ones I want to make.</p>
+                    <br />
+                    
+                    <div class="row">
+                            <div class="col-md-12">
+                                <span class="d-block bg-dark text-center text-white">Contact me I'll reply you asap!</span>
+                            </div>
+                            <div class="col-md-4">
+                                <form class="col-md-4" action="https://formspree.io/solucaoelogica@gmail.com" method="POST">
+                                    Name:<input type="text" name="name">
+                                    <br />
+                                    Email:<input type="email" name="_replyto">
+                                    <br />
+                                    <br />
+                                    <input class="btn btn-success" type="submit" value="Send">
+                                </form>
+                            </div>
+                        </div>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"></script>
-  <script src="assets/js/bootstrap.min.js"></script>
+                </div>
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="col-md-8 col-sm-6">
+                            <p><span class="bg-primary d-block">FRONTEND</span>
+                                <img src="img/angular.png" class="img-fluid img-thumbnail"> </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-8 col-sm-6">
+                            <p><span class="bg-dark d-block text-white">BACKEND</span>
+                                <img src="img/java.png" class="img-fluid img-thumbnail"> </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-deck bg-light p-3">
+
+                <div class="card border-primary"> <img src="./img/spring.png" class="card-img-top p-2 img-thumbnail">
+                    <div class="card-body">
+                        <h4 class="card-title">SpringBoot</h4>
+                        <p class="card-text">Actually I've been studying, springboot after finishing Jsp and Servlets course</p> 
+                        <a href="https://spring.io/tools" class="btn btn-success">STS Suite</a>
+                    </div>
+                </div>
+
+
+                <div class="card border-primary"> <img src="./img/ionic.png" class="card-img-top p-2 img-thumbnail">
+                    <div class="card-body">
+                        <h4 class="card-title">Ionic Framework</h4>
+                        <p class="card-text">Im starting my studies on ionic framework. Soon I'll deploy my first ionic
+                            app</p> <a href="https://ionicframework.com/" class="btn btn-success">
+                            ionic framework</a>
+                    </div>
+                </div>
+
+
+                <div class="card border-primary"> <img src="./img/git.png" class="card-img-top p-2 img-thumbnail">
+                    <div class="card-body">
+                        <h4 class="card-title">Git</h4>
+                        <p class="card-text">Tools for version control, such as gitlab, github, subversion(SVN)</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <footer id="footer" class="bg-dark text-light text-center">
+        <div class="container-fluid mb-4 p-4">
+            <div>Bruno A. de Padua (c)2018</div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
 </body>
 
 </html>
