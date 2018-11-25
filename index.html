@@ -21,12 +21,22 @@
 </head>
 
 <body>
-    <header class="container">
+    <nav class="top-menu">
+        <a href="https://solucaologica.github.io/">
+            <img src='./img/logo.png' alt="">
+        </a>
+        <div class="container">
+            <ul>
+                <li></li>
+            </ul>
+        </div>
+    </nav>
+    <header class="cabecalho">
         <a href="https://solucaologica.github.io">
             <h1 class="logo">Solução Logica - Bruno A. Pádua</h1>
         </a>
         <button class="btn-menu bg-gradient"><i class="fa fa-bars fa-lg"></i></button>
-        <nav class="menu">
+        <nav class="menu text-center">
             <a class="btn-close"><i class="fa fa-lg fa-times"></i></a>
             <ul>
                 <li><a href="https://solucaologica.github.com">Home</a></li>
@@ -37,27 +47,27 @@
         </a>
     </header>
     <div class="container banner">
-        <div class="title text-center">
+        <div class="title">
             <h2>Solução Lógica</h2>
             <h3>Fullstack Developer - Solidificando experiências.</h3>
+        </div>
             <div class="buttons">
                 <div class="line">
-                    <button class="btn btn-full btn-primary round">Curriculo <i class="far fa-lg fa-id-card"></i></button>
+                    <button class="btn bg-black round">Curriculo<i class="far fa-lg fa-id-card"></i></button>
                 </div>
                 <div class="line">
                     <a href="#sobre">
-                        <button class="btn btn-full btn-primary round">Sobre <i class="fab fa-lg fa-angellist"></i></button>
+                        <button class="btn btn-primary round">Sobre <i class="fab fa-lg fa-angellist"></i></button>
                     </a>
                 </div>
             </div>
-        </div>
     </div>
     <main class="container">
         <article class="servico">
-            <a href="#" alt="Java">
-                <img src='./img/angular.png' alt="Desenvolvimento Front-End">
-            </a>
             <div class="inner">
+            <a href="#" alt="Java">
+                <img src='./img/angular.jpg' alt="Desenvolvimento Front-End">
+            </a>
                 <a href="#">Front-End</a>
                 <h4>Angular</h4>
                 <p>
@@ -72,25 +82,26 @@
                         para controlar as compras, vendas, estoque, utilizando PHP, Html5 + Jquery e MySql. 
                     -->
                     Meu foco de trabalho agora é o Angular 6, o qual conclui alguns treinamentos, e
-                    em breve vou disponibilizar os links para algumas das aplicações que eu
-                    criei para estudo do framework, talvez alguns tutoriais para quem está iniciando.
+                    em breve vou disponibilizar os links para algumas das aplicações.
                 </p>
             </div>
         </article>
         <article class="servico">
-            <a href="#" alt="Java">
+            <div class="inner">
+            <a href="#" alt="Back-End">
                 <img src='./img/spring.png' alt="Desenvolvimento Back-End">
             </a>
-            <div class="inner">
                 <a href="#">Desenvolvimento Back-End</a>
-                <h4>Do PHP ao Java</h4>
+                <h4>PHP ao Java</h4>
                 <p>
                     Como autodidata iniciei programando em PHP por volta de 2001,
-                    e até decidir trocar de carreira era minha main language.
-                    Na faculdade fui apresentado ao Java, que é a linguagem a qual dedico
-                    aos meus estudos, por ser robusta e ter uma comunidade enorme com muito
-                    conteúdo disponível para pesquisa.
-                    <!--    
+                    e hoje meu foco de trabalho/estudos é o Java.
+                    <!--
+                        e até decidir trocar de carreira era minha main language.
+                        Na faculdade fui apresentado ao Java, que é a linguagem a qual dedico
+                        aos meus estudos, por ser robusta e ter uma comunidade enorme com muito
+                        conteúdo disponível para pesquisa.
+
                         Meu primeiro contato com aplicões Back-End foi com PHP, não me lembro a versão exata
                         4.1 acredito eu que seja até anterior afinal foi em 2001, não existia facebook, 
                         nem mesmo o orkut, a internet tinha alguns sites de relacionamento.
@@ -114,10 +125,10 @@
             </div>
         </article>
         <article class="servico">
-            <a name="sobre" alt="Java">
-                <img src='./img/business.jpg' alt="Desenvolvimento Aplicações">
-            </a>
             <div class="inner">
+            <a name="sobre" alt="Java">
+                <img src='./img/about.png' alt="Desenvolvimento Aplicações">
+            </a>
                 <a href="#">Sobre mim</a>
                 <h4>Bruno Alves de Pádua.</h4>
                 <!--
@@ -138,7 +149,7 @@
                     atuando em um projeto para o cliente <strong>Cielo</strong>.
                     Atuando no desenvolvimento Java com java 8, microservices, rest,
                     banco de dados Oracle e Front-End com Angular 6, Scrum, Kanban,
-                    controle de versão Git, e Swagger.
+                    controle de versão Git e Swagger.
                 </p>
             </div>
         </article>
