@@ -14,12 +14,33 @@ ul{
 img{
     max-width: 100%;
 }
+/** BG **/
+.bg-gradient{
+    background:linear-gradient(to right, #ff0000, #EE6055);
+}
+.bg-black{
+    background-color: #000000;
+}
+.bg-white{
+    background-color: #ffffff;
+}
+/** **/
 
-.cabecalho{
+/** UTIL **/
+.round{
+    border-radius: 7px;
+}
+.text-center{
+    text-align: center;
+}
+/** **/
+
+.container{
+    padding: 3% 4%;
     width: 100%;
     float: left;
-    padding: 3% 4%;
 }
+
 .logo{
     width: 56px; 
     height: 56px; 
@@ -32,11 +53,9 @@ img{
     width: 56px;
     height: 56px;
     float: right;
-    text-align: center;
     color: white;
     border-radius: 56px;
     cursor: pointer;
-    background:linear-gradient(to right, #ff0000, #EE6055);
 }
 
 .menu{
@@ -52,7 +71,6 @@ img{
 .menu ul{
     width: 100%;
     float: left;
-    text-align: center;
 }
 .menu li{
     padding: 1.5%;
@@ -78,11 +96,7 @@ img{
 /* BANNER */
 
 .banner{
-    width: 100%;
-    float: left;
     text-align: left;
-    text-align: center;
-    padding: 3% 4%;
     background: url(../../img/bg.jpg) no-repeat fixed;
 }
 .title{
@@ -109,7 +123,6 @@ img{
     text-align: left;
     cursor: pointer;
     padding: 5%;
-    border-radius: 10px;
 }
 .buttons{
     margin-top: 2%;
@@ -137,11 +150,6 @@ img{
     color: #000000;
 }
 /*   SERVICOS */
-.servicos{
-    width: 100%;
-    float: left;
-    padding: 3% 4%;
-}
 .servico{
     width: 100%;
     background-color: #ffffff;
@@ -175,12 +183,9 @@ img{
     font-weight: 700;
 }
 .newsletter{
-    width: 100%;
-    float: left;
-    padding: 3% 4%;
-    text-align: center;
     color: #ffffff;
     background-color: #000000;
+    border-radius: 7px 7px 0 0;
 }
 .newsletter h2{
     font-size: 1.5em;
@@ -193,7 +198,6 @@ img{
     background-color: #C5C5C5;
     border: 1px solid #ffffff;
     padding: 5%;
-    border-radius: 5px;
 }
 
 .newsletter button{
@@ -203,11 +207,7 @@ img{
     margin-top: 5%;
 }
 .rodape{
-    width: 100%;
-    float: left;
-    padding: 3% 4%;
-    text-align: center;
-    background:linear-gradient(to right, #EE6055, rgb(252, 203, 199));
+    border-radius: 0 0 7px 7px;
 }
 
 .social-icons a{
@@ -226,9 +226,7 @@ img{
     color: rgba(255, 255, 255, 0.7);
 }
 
-.contador{
-    
+.contador{ 
     width: 100%;
-    text-align: center;
     font-weight: 500;
 }
