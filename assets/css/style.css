@@ -41,7 +41,7 @@ body {
     background-color: var(--dark-bg);
     min-height: auto;
     padding-top: 150px;
-    padding-bottom: 80px;
+    padding-bottom: 40px;
     margin-top: -56px; /* Counteract body padding for full screen */
 }
 
