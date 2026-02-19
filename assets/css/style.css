@@ -1,0 +1,134 @@
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --dark-bg: #212529;
+    --light-bg: #f8f9fa;
+    --text-color: #333;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
+    scroll-behavior: smooth;
+    padding-top: 56px; /* Offset for fixed navbar */
+}
+
+/* Navbar */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.navbar-brand {
+    font-weight: 600;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../../img/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    min-height: 500px;
+    margin-top: -56px; /* Counteract body padding for full screen */
+}
+
+.hero-section h1 {
+    font-size: 3.5rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.hero-section .lead {
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+/* About Section */
+.profile-img {
+    max-width: 300px;
+    border: 5px solid white;
+}
+
+/* Section Titles */
+.section-title {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+    font-weight: 700;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 3px;
+    background-color: var(--primary-color);
+}
+
+/* Cards */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+}
+
+/* Timeline (Simple Vertical) */
+.timeline {
+    border-left: 3px solid var(--primary-color);
+    padding-left: 20px;
+    margin-left: 10px;
+}
+
+.timeline .card {
+    position: relative;
+}
+
+.timeline .card::before {
+    content: '';
+    position: absolute;
+    left: -28px;
+    top: 20px;
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border: 3px solid var(--primary-color);
+    border-radius: 50%;
+}
+
+/* Contact Form */
+.contact-form .form-control {
+    border-radius: 10px;
+    border: 1px solid #ced4da;
+    padding: 15px;
+}
+
+.contact-form .form-control:focus {
+    box-shadow: none;
+    border-color: var(--primary-color);
+}
+
+/* Footer */
+footer a {
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--primary-color) !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+    .profile-img {
+        max-width: 200px;
+        margin-bottom: 20px;
+    }
+}

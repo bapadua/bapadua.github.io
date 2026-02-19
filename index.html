@@ -1,191 +1,268 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="description" content="Bruno Alves de Pádua, Portfólio profissional">
-    <meta name="keywords" content="Java, Java 8, Eclipse, Spring, SpringMVC, Springboot, 
-    Oracle, SQL, PL-SQL, DevOps, Git, SVN, Desenvolvimento, Developer, Html, Css, Javascript,
-    Angular 6, Ionic Framework.">
-    <meta robots content="robots" content="index, follow">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bruno Alves de Pádua - Fullstack Developer Portfolio">
+    <meta name="keywords" content="Java, Angular, Spring Boot, Fullstack Developer, Portfolio">
     <meta name="author" content="Bruno Alves de Pádua">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="assets/css/custom.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
-        crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,700" rel="stylesheet">
+    <title>Bruno Alves de Pádua | Fullstack Developer</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="icon" href="img/logo.png">
-    <title>Bruno Alves de Pádua::</title>
 </head>
-
 <body>
-    <nav class="top-menu">
-        <a href="https://bapadua.github.io/">
-            <img src='./img/logo.png' alt="">
-        </a>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
-            <ul>
-                <li></li>
-            </ul>
+            <a class="navbar-brand" href="#">
+                <img src="img/logo.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top me-2">
+                Bruno Pádua
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Habilidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experiência</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education">Educação</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contato</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
-    <header class="cabecalho">
-        <a href="https://bapadua.github.io">
-            <h1 class="logo">Bruno Alves de Pádua</h1>
-        </a>
-        <button class="btn-menu bg-gradient"><i class="fa fa-bars fa-lg"></i></button>
-        <nav class="menu text-center">
-            <a class="btn-close"><i class="fa fa-lg fa-times"></i></a>
-            <ul>
-                <li><a href="https://bapadua.github.com">Home</a></li>
-                <li><a href="./curriculo.html">Curriculo</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
-        </a>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero-section d-flex align-items-center text-white">
+        <div class="container text-center">
+            <h1 class="display-4 fw-bold mb-3">Bruno Alves de Pádua</h1>
+            <p class="lead mb-4">Fullstack Developer | Java & Angular Specialist</p>
+            <a href="#about" class="btn btn-primary btn-lg rounded-pill px-4">Saiba Mais</a>
+            <a href="#contact" class="btn btn-outline-light btn-lg rounded-pill px-4 ms-2">Contate-me</a>
+        </div>
     </header>
-    <div class="container banner">
-        <div class="title">
-            <h2>Bruno Alves de Pádua</h2>
-            <h3>Fullstack Developer - Solidificando experiências.</h3>
-        </div>
-        <div class="buttons">
-            <div class="line">
-                <a href="./curriculo.html">
-                    <button class="btn bg-black round">Curriculo<i class="far fa-lg fa-id-card"></i></button>
-                </a>
-            </div>
-            <div class="line">
-                <a href="#sobre">
-                    <button class="btn btn-primary round">Sobre <i class="fab fa-lg fa-angellist"></i></button>
-                </a>
-            </div>
-        </div>
-    </div>
-    <main class="container">
-        <article class="servico">
-            <div class="inner">
-                <a href="#" alt="Java">
-                    <img src='./img/angular.jpg' alt="Desenvolvimento Front-End">
-                </a>
-                <a href="#">Frontend</a>
-                <h4>Angular</h4>
-                <p>
-                    Para desenvolvimento frontend, utilizo do robusto framework angular,
-                    e bibliotecas como <strong>Bootstrap</strong>, <strong>Primeng</strong>,
-                    <strong>Material Design</strong>, <strong>MdBoostrap</strong>, Css, Javascript.
-                </p>
-            </div>
-        </article>
-        <article class="servico">
-                <div class="inner">
-                    <a href="#" alt="Java">
-                        <img src='./img/flutter.png' alt="Desenvolvimento Front-End">
-                    </a>
-                    <a href="#">Mobile</a>
-                    <h4>Flutter</h4>
-                    <p>
-                        Flutter, é útilizado por empresas do grupo ali, entre outras gigantes
-                        tem um visual muito agradável de seus componentes, e ele esta voltado 
-                        para a performance, então é uma excelente combinação para obter, uma
-                        experiência agradável para o usuário, tanto visual como também em sua 
-                        navegabilidade.
-                        </p>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-5 text-center mb-4 mb-md-0">
+                    <img src="img/eu.jpg" alt="Bruno Alves de Pádua" class="img-fluid rounded-circle shadow profile-img">
                 </div>
-            </article>
-        <article class="servico">
-            <div class="inner">
-                <a href="#" alt="Back-End">
-                    <img src='./img/spring.png' alt="Desenvolvimento Back-End">
-                </a>
-                <a href="#">Desenvolvimento Backend</a>
-                <h4>Java</h4>
-                <p>
-                    Iniciei no java no ano de 2017, realizei mais de 40 cursos online,
-                    entre os mais importantes, JSP com servlets 2.5, JSF, Springboot para
-                    aplicações RESTful, SOAP, SQS, Hibernate, TDD, etc.
-                </p>
+                <div class="col-md-7">
+                    <h2 class="section-title mb-4">Sobre Mim</h2>
+                    <p class="lead text-muted">Desenvolvedor apaixonado por criar soluções escaláveis e eficientes.</p>
+                    <div class="about-content">
+                        <p>Sou um desenvolvedor Fullstack apaixonado por tecnologia e inovação. Com sólida experiência em Java e Angular, tenho trabalhado em projetos desafiadores no setor financeiro, especificamente com meios de pagamento.</p>
+                        <p>Atualmente, atuo na <strong>Stefanini IT</strong> como Analista Pleno, desenvolvendo soluções robustas para grandes clientes como <strong>Cielo</strong> e <strong>Alelo</strong>. Minha expertise inclui a construção e manutenção de gateways de pagamento, sempre focando em performance, segurança e escalabilidade.</p>
+                        <p>Além do desenvolvimento técnico, valorizo as boas práticas de engenharia de software, como TDD, Clean Code e DevOps, garantindo a entrega de software de alta qualidade.</p>
+                    </div>
+                    <div class="mt-4">
+                        <a href="#contact" class="btn btn-dark">Vamos conversar?</a>
+                    </div>
+                </div>
             </div>
-        </article>
-        <article class="servico">
-            <div class="inner">
-                <a name="sobre" alt="Java">
-                    <img src='./img/about.png' alt="Desenvolvimento Aplicações">
-                </a>
-                <a href="#">Sobre mim</a>
-                <h4>Bruno Alves de Pádua.</h4>
-                <!--
-
-                    <p>
-                        Muito prazer! meu nome é Bruno, sou um autodidata, minha curiosidade
-                        sempre me levou ao uso de tecnologia. Meu primeiro emprego foi como
-                        instrutor de informática, porém acabei atuando no mercado de trabalho
-                        como Gerente de Vendas de uma micro empresa, na qual eu mesmo acabei
-                        criando os controles de tarefas, vendas, estatísticas, etc...
-                        Acabei abandonando o curso de Processos Gerenciais, e hoje estou entrando
-                        no terceiro ano de Sistemas de Informação.
-                    </p>
-                    
-                -->
-                <p>
-                    Atualmente trabalho na <strong>Stefanini IT</strong>, 
-                    atuando como desenvolvedor Java/Angular junto a projetos
-                    para meios de pagamento, para clientes como <strong>Cielo</strong>,
-                    <strong>Alelo</strong>, atualmente como Analista Pleno de adquirência,
-                    na construção do gateway de pagamento <strong>Alelo.</strong>
-                </p>
-            </div>
-        </article>
-
-    </main>
-    <!--
-
-    -->
-    <section class="container newsletter text-center">
-        <a name="contato"></a>
-        <h2>Contate me!</h2>
-        <h3>Freelance, propostas de emprego, dúvidas.</h3>
-        <form action="https://formspree.io/solucaoelogica@gmail.com" method="POST">
-            <input class="container round" type="text" name="name" placeholder="Nome/Assunto" required>
-            <br />
-            <br />
-            <input class="container line round" type="email" name="_replyto" placeholder="Seu email" required>
-            <br />
-            <br />
-            <button class="container btn btn-yellow round" type="submit" alt="Enviar">
-                Enviar
-            </button>
-            <br />
-            <br />
-        </form>
+        </div>
     </section>
-    <footer class="container rodape bg-gradient  text-center">
-        <p class="copyright">
-            Copyright © Bruno Alves de Pádua - Solução Lógica 2018.
-        </p>
-        <div class="social-icons">
-            <a href="https://www.linkedin.com/in/bruno-padua-b268939b/"><i class="fab fa-linkedin"></i></a>
-            <a href="https://www.instagram.com/bro.zilian/"><i class="fab fa-instagram"></i></a>
-            <a href="https://github.com/bapadua"><i class="fab fa-github"></i></a>
-            <a href="https://api.whatsapp.com/send?phone=5511986659898"><i class="fab fa-whatsapp-square"></i></a>
-            <a href="mailto:bapadua@outlook.com"><i class="fa fa-envelope"></i></a>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center section-title mb-5">Habilidades Técnicas</h2>
+            <div class="row g-4 skills-container">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body text-center">
+                            <i class="fab fa-java fa-3x text-primary mb-3"></i>
+                            <h5 class="card-title">Backend</h5>
+                            <ul class="list-unstyled">
+                                <li>Java 8+</li>
+                                <li>Spring Boot</li>
+                                <li>Hibernate/JPA</li>
+                                <li>RESTful & SOAP</li>
+                                <li>Microservices</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body text-center">
+                            <i class="fab fa-angular fa-3x text-danger mb-3"></i>
+                            <h5 class="card-title">Frontend</h5>
+                            <ul class="list-unstyled">
+                                <li>Angular 2+</li>
+                                <li>TypeScript</li>
+                                <li>HTML5 & CSS3</li>
+                                <li>Bootstrap</li>
+                                <li>PrimeNG</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body text-center">
+                            <i class="fas fa-database fa-3x text-warning mb-3"></i>
+                            <h5 class="card-title">Data & Cloud</h5>
+                            <ul class="list-unstyled">
+                                <li>Oracle SQL/PL-SQL</li>
+                                <li>MongoDB</li>
+                                <li>AWS (Basic)</li>
+                                <li>Docker</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body text-center">
+                            <i class="fas fa-tools fa-3x text-secondary mb-3"></i>
+                            <h5 class="card-title">Tools & Mobile</h5>
+                            <ul class="list-unstyled">
+                                <li>Git & SVN</li>
+                                <li>DevOps/CI/CD</li>
+                                <li>Flutter</li>
+                                <li>TDD (JUnit, Mockito)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-5">
+        <div class="container">
+            <h2 class="text-center section-title mb-5">Experiência Profissional</h2>
+            <div class="timeline">
+                <div class="card mb-3 border-0 shadow-sm">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <h5 class="card-title mb-0 text-primary">Analista Desenvolvedor Pleno</h5>
+                            <span class="badge bg-secondary">Atual</span>
+                        </div>
+                        <h6 class="card-subtitle mb-2 text-muted">Stefanini IT</h6>
+                        <p class="card-text">Atuação como desenvolvedor Java/Angular em projetos críticos de meios de pagamento.</p>
+                        <ul>
+                            <li>Desenvolvimento e manutenção do gateway de pagamento para a <strong>Alelo</strong>.</li>
+                            <li>Participação em projetos para a <strong>Cielo</strong>.</li>
+                            <li>Implementação de novas features e correção de bugs em ambientes de alta disponibilidade.</li>
+                            <li>Utilização de metodologias ágeis (Scrum/Kanban).</li>
+                        </ul>
+                    </div>
+                </div>
+                 <!-- Adicione mais experiências aqui conforme necessário -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center section-title mb-5">Educação e Certificações</h2>
+            <div class="row education-container justify-content-center">
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="fas fa-graduation-cap fa-3x text-success mb-3"></i>
+                            <h5 class="card-title">Bacharel em Sistemas de Informação</h5>
+                            <p class="card-text text-muted">Concluído em 2020</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="fas fa-certificate fa-3x text-info mb-3"></i>
+                            <h5 class="card-title">Certificações e Cursos</h5>
+                            <ul class="list-unstyled text-start d-inline-block">
+                                <li><i class="fas fa-check text-success me-2"></i>Formação Angular (2, 4, 6)</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Spring Framework & Spring Boot</li>
+                                <li><i class="fas fa-check text-success me-2"></i>MongoDB & Spring Data</li>
+                                <li><i class="fas fa-check text-success me-2"></i>TDD com Java (JUnit, Mockito)</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Front-End (HTML5, jQuery)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-dark text-white">
+        <div class="container">
+            <h2 class="text-center section-title mb-5 text-white">Entre em Contato</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-center mb-5">
+                    <p class="lead">Estou disponível para novos desafios e colaborações. Sinta-se à vontade para me enviar uma mensagem.</p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <form action="https://formspree.io/solucaoelogica@gmail.com" method="POST" class="contact-form">
+                        <div class="mb-3">
+                            <input type="text" name="name" class="form-control form-control-lg" placeholder="Seu Nome" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" name="_replyto" class="form-control form-control-lg" placeholder="Seu Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea name="message" class="form-control form-control-lg" rows="5" placeholder="Sua Mensagem" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg w-100">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col text-center social-icons">
+                    <a href="https://www.linkedin.com/in/bruno-padua-b268939b/" class="text-white mx-3 fs-2"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/bapadua" class="text-white mx-3 fs-2"><i class="fab fa-github"></i></a>
+                    <a href="https://www.instagram.com/bro.zilian/" class="text-white mx-3 fs-2"><i class="fab fa-instagram"></i></a>
+                    <a href="https://api.whatsapp.com/send?phone=5511986659898" class="text-white mx-3 fs-2"><i class="fab fa-whatsapp"></i></a>
+                    <a href="mailto:bapadua@outlook.com" class="text-white mx-3 fs-2"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-black text-white text-center">
+        <div class="container">
+            <p class="mb-0">&copy; <span id="year"></span> Bruno Alves de Pádua. Todos os direitos reservados.</p>
         </div>
     </footer>
-    <script src='./assets/js/jquery-3.3.1.js'></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/script.js"></script>
     <script>
-        $(".btn-menu").click(() => {
-            $(".menu").show();
-        })
-
-        $(".btn-close").click(() => {
-            $(".menu").hide();
-        })
+        document.getElementById('year').textContent = new Date().getFullYear();
     </script>
-    <div class="line contador text-center">
-        
-    </div>
 </body>
-
 </html>
