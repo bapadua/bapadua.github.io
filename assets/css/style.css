@@ -70,6 +70,7 @@ body {
     padding-bottom: 10px;
     font-weight: 700;
     color: var(--text-color);
+    text-align: center; /* Ensure text itself is centered */
 }
 
 .section-title::after {
