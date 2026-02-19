@@ -70,6 +70,7 @@ body {
     padding-bottom: 10px;
     font-weight: 700;
     color: var(--text-color);
+    text-align: center; /* Ensure text itself is centered */
 }
 
 .section-title::after {
@@ -168,5 +169,8 @@ footer a:hover {
     .profile-img {
         max-width: 200px;
         margin-bottom: 20px;
+    }
+    .timeline {
+        margin-left: 20px; /* Ensure dots have enough space on mobile */
     }
 }
