@@ -39,8 +39,9 @@ body {
 .hero-section {
     /* Removed background image as per request */
     background-color: var(--dark-bg);
-    height: 100vh;
-    min-height: 500px;
+    min-height: auto;
+    padding-top: 150px;
+    padding-bottom: 80px;
     margin-top: -56px; /* Counteract body padding for full screen */
 }
 
